@@ -161,7 +161,7 @@ class DatabaseOperations(BaseDatabaseOperations):
         }
 
     def prep_for_like_query(self, x):
-        return str(x).replace("\\", "\\\\").replace("%", r"\%").replace("_", r"\_")
+        return str(x).replace("\\", "\\\\").replace("%", r"\%")
 
     def regex_lookup(self, lookup_type):
         if lookup_type == "regex":
