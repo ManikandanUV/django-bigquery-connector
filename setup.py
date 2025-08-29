@@ -12,17 +12,17 @@ with open(os.path.join("django_bq", "__init__.py"), "r") as f:
             version = line.split("=")[1].strip().strip('"').strip("'")
             break
     else:
-        version = "0.1.0"
+        version = "0.2.0"
 
 setup(
     name="django-bigquery-connector",
     version=version,
-    author="Sidhavratha Kumar",
+    author="Manikandan Ramakrishnan",
     author_email="your.email@example.com",
-    description="Django ORM connector for Google BigQuery",
+    description="Django ORM connector for Google BigQuery, forked from https://github.com/ossown/django-bigquery-connector",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/ossown/django-bigquery-connector",
+    url="https://github.com/ManikandanUV/django-bigquery-connector",
     packages=find_packages(exclude=["tests", "tests.*"]),
     classifiers=[
         "Development Status :: 3 - Alpha",
